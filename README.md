@@ -182,3 +182,55 @@ Analyzes marketing channel effectiveness, campaign performance, payment preferen
 ```DAX
 Total Revenue =
 SUM('sales_customer'[net_sales])
+
+## 📊 Dashboard Preview
+
+### 1. Executive Overview
+![Executive Overview](01-executive-overview.png)
+
+### 2. Product Analysis
+![Product Analysis](02-product-analysis.png)
+
+### 3. Customer Analysis
+![Customer Analysis](03-customer-analysis.png)
+
+### 4. Sales & Profit Analysis
+![Sales & Profit Analysis](04-sales-profit-analysis.png)
+
+### 5. Delivery, Returns & Customer Experience
+![Delivery Returns Analysis](05-delivery-returns-analysis.png)
+
+### 6. Marketing & Payment Analysis
+![Marketing Payment Analysis](06-marketing-payment-analysis.png)
+
+---
+
+## 🗂 Data Model
+
+The project uses a relational Power BI data model connecting sales transactions, customers, products, order items, and a dedicated Date table.
+
+![Power BI Data Model](data-model.png)
+
+## 📈 Key DAX Measures
+
+- Total Revenue
+- Total Profit
+- Gross Sales
+- Average Order Value
+- Profit Margin %
+- YoY Growth %
+- Return Rate %
+- Cancellation Rate %
+- Average Customer Lifetime Value
+- Revenue per Customer
+- Repeat Customers
+
+## 💡 Key Business Insights
+
+- The dashboard analyzes more than 138K orders and approximately 25K customers.
+- Total revenue is approximately 177M with profit of approximately 76M.
+- Organic Search generated the highest marketing-channel revenue.
+- Credit Card was the highest-performing payment method by revenue.
+- Repeat customers represent a major share of the customer base.
+- Product, customer, marketing, delivery, return, and profitability performance can be analyzed using interactive filters.
+
