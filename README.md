@@ -209,7 +209,7 @@ SUM('sales_customer'[net_sales])
 
 The project uses a relational Power BI data model connecting sales transactions, customers, products, order items, and a dedicated Date table.
 
-![Power BI Data Model](data-model.png)
+![Power BI Data Model](data-model.png.png)
 
 ## 📈 Key DAX Measures
 
