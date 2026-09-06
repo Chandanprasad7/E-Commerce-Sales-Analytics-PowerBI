@@ -143,108 +143,44 @@ Analyzes marketing-channel and payment-method performance.
 - Credit Card generated the highest payment-method revenue at approximately **53M**.
 - Approximately **20% of orders** used coupons.
 
-
 ## 🧮 Key DAX Measures
-
-The following DAX measures were used to build KPIs and business analysis:
 
 - Total Revenue
 - Total Profit
-- Gross Sales
 - Total Orders
 - Total Customers
-- Average Order Value (AOV)
+- Average Order Value
 - Profit Margin %
 - YoY Growth %
 - Return Rate %
 - Cancellation Rate %
-- Average Customer Lifetime Value
-- Revenue per Customer
-- Repeat Customers
-
----
 
 ## 📊 Dashboard Preview
 
-### 1. Executive Overview
+### Executive Overview
 ![Executive Overview](01-executive-overview.png)
 
-### 2. Product Analysis
+### Product Analysis
 ![Product Analysis](02-product-analysis.png)
 
-### 3. Customer Analysis
+### Customer Analysis
 ![Customer Analysis](03-customer-analysis.png)
 
-### 4. Sales & Profit Analysis
+### Sales & Profit Analysis
 ![Sales Profit Analysis](04-sales-profit-analysis.png)
 
-### 5. Delivery, Returns & Customer Experience
+### Delivery, Returns & Customer Experience
 ![Delivery Returns Analysis](05-delivery-returns-analysis.png)
 
-### 6. Marketing & Payment Analysis
+### Marketing & Payment Analysis
 ![Marketing Payment Analysis](06-marketing-payment-analysis.png)
-
----
 
 ## 🗂 Data Model
 
-The Power BI data model connects sales transactions, customers, products, order items and a dedicated Date table.
-
 ![Power BI Data Model](data-model.png)
-
----
-
-## 💡 Key Business Insights
-
-- Analyzed more than **138K orders** and approximately **25K customers**.
-- Generated approximately **177M in revenue** and **76M in profit**.
-- Overall profit margin is approximately **43%**.
-- Organic Search generated the highest marketing-channel revenue.
-- Credit Card generated the highest revenue among payment methods.
-- Repeat customers represent a major share of the customer base.
-- Return rate is approximately **6.9%**.
-- Cancellation rate is approximately **6.1%**.
-- The dashboard covers business performance from **2021 to 2025**.
-
----
-
-## 📁 Repository Contents
-
-- `E-Commerce-Sales-Dashboard.pbix`
-- `01-executive-overview.png`
-- `02-product-analysis.png`
-- `03-customer-analysis.png`
-- `04-sales-profit-analysis.png`
-- `05-delivery-returns-analysis.png`
-- `06-marketing-payment-analysis.png`
-- `data-model.png`
-- `README.md`
-
----
-
-## 🎯 Project Objective
-
-This project demonstrates practical skills in:
-
-- Power BI
-- Power Query
-- DAX
-- Data Modeling
-- Data Visualization
-- KPI Reporting
-- Sales Analysis
-- Customer Analysis
-- Product Analysis
-- Marketing Analysis
-- Business Intelligence
-
----
 
 ## 👤 Author
 
 **Chandan Prasad**
 
-Aspiring Data Analyst | Power BI | Excel | SQL | Data Analytics
-
----
-
+Aspiring Data Analyst | Power BI | Excel | SQL
