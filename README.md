@@ -175,7 +175,6 @@ Analyzes marketing channel effectiveness, campaign performance, payment preferen
 
 ---
 
-
 ## 🧮 Key DAX Measures
 
 Some of the important DAX measures used in this project include:
@@ -328,6 +327,11 @@ The objective of this project is to demonstrate practical skills in:
 ## 👤 Author
 
 **Chandan Prasad**
+
+GitHub: [Chandanprasad7]
+
+
+
 
 GitHub: [Chandanprasad7](https://github.com/Chandanprasad7)
 
