@@ -182,3 +182,13 @@ Analyzes marketing channel effectiveness, campaign performance, payment preferen
 ```DAX
 Total Revenue =
 SUM('sales_customer'[net_sales])
+
+## 🗂 Data Model
+
+The project uses a relational Power BI data model connecting sales transactions,
+customers, products, order items, and a dedicated Date table.
+
+The model enables analysis across sales, profitability, customer behavior,
+product performance, marketing, delivery, and returns.
+
+![Power BI Data Model](data-model.png)
