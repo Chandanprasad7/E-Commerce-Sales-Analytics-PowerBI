@@ -143,246 +143,108 @@ Analyzes marketing-channel and payment-method performance.
 - Credit Card generated the highest payment-method revenue at approximately **53M**.
 - Approximately **20% of orders** used coupons.
 
----
 
 ## 🧮 Key DAX Measures
 
-Some of the important DAX measures created for this project are shown below.
+The following DAX measures were used to build KPIs and business analysis:
 
-### Total Revenue
-
-```DAX
-Total Revenue =
-SUM('sales_customer'[net_sales])
-```
-
-### Total Profit
-
-```DAX
-Total Profit =
-SUM('sales_customer'[profit])
-```
-
-### Total Orders
-
-```DAX
-Total Orders =
-DISTINCTCOUNT('sales_customer'[order_id])
-```
-
-### Total Customers
-
-```DAX
-Total Customers =
-DISTINCTCOUNT('sales_customer'[customer_id])
-```
-
-### Average Order Value
-
-```DAX
-AOV =
-DIVIDE(
-    [Total Revenue],
-    [Total Orders]
-)
-```
-
-### Profit Margin %
-
-```DAX
-Profit Margin % =
-DIVIDE(
-    [Total Profit],
-    [Total Revenue]
-)
-```
-
-### Returned Orders
-
-```DAX
-Returned Orders =
-CALCULATE(
-    [Total Orders],
-    'sales_customer'[order_status] = "Returned"
-)
-```
-
-### Return Rate %
-
-```DAX
-Return Rate % =
-DIVIDE(
-    [Returned Orders],
-    [Total Orders]
-)
-```
-
-### Cancelled Orders
-
-```DAX
-Cancelled Orders =
-CALCULATE(
-    [Total Orders],
-    'sales_customer'[order_status] = "Cancelled"
-)
-```
-
-### Cancellation Rate %
-
-```DAX
-Cancellation Rate % =
-DIVIDE(
-    [Cancelled Orders],
-    [Total Orders]
-)
-```
-
-### Previous Year Revenue
-
-```DAX
-Previous Year Revenue =
-CALCULATE(
-    [Total Revenue],
-    SAMEPERIODLASTYEAR('Date table'[Date])
-)
-```
-
-### YoY Growth %
-
-```DAX
-YoY Growth % =
-DIVIDE(
-    [Total Revenue] - [Previous Year Revenue],
-    [Previous Year Revenue]
-)
-```
+- Total Revenue
+- Total Profit
+- Gross Sales
+- Total Orders
+- Total Customers
+- Average Order Value (AOV)
+- Profit Margin %
+- YoY Growth %
+- Return Rate %
+- Cancellation Rate %
+- Average Customer Lifetime Value
+- Revenue per Customer
+- Repeat Customers
 
 ---
 
-# 📸 Dashboard Preview
+## 📊 Dashboard Preview
 
-## 1. Executive Overview
-
+### 1. Executive Overview
 ![Executive Overview](01-executive-overview.png)
 
----
-
-## 2. Product Analysis
-
+### 2. Product Analysis
 ![Product Analysis](02-product-analysis.png)
 
----
-
-## 3. Customer Analysis
-
+### 3. Customer Analysis
 ![Customer Analysis](03-customer-analysis.png)
 
----
-
-## 4. Sales & Profit Analysis
-
+### 4. Sales & Profit Analysis
 ![Sales Profit Analysis](04-sales-profit-analysis.png)
 
----
-
-## 5. Delivery, Returns & Customer Experience
-
+### 5. Delivery, Returns & Customer Experience
 ![Delivery Returns Analysis](05-delivery-returns-analysis.png)
 
----
-
-## 6. Marketing & Payment Analysis
-
+### 6. Marketing & Payment Analysis
 ![Marketing Payment Analysis](06-marketing-payment-analysis.png)
 
 ---
 
-# 🗂️ Data Model
+## 🗂 Data Model
 
-The Power BI project uses a relational data model connecting sales transactions, customers, order items, products, and a dedicated Date table.
-
-### Main Tables
-
-- `sales_customer`
-- `order_items`
-- `product_catalog`
-- `customer_master`
-- `Date table`
-
-The model enables analysis across **orders, customers, products, dates, revenue, profitability, marketing, delivery, and returns**.
+The Power BI data model connects sales transactions, customers, products, order items and a dedicated Date table.
 
 ![Power BI Data Model](data-model.png)
 
 ---
 
-# 💡 Key Business Insights
+## 💡 Key Business Insights
 
-- The dataset contains more than **138K orders** and approximately **25K customers**.
-- The business generated approximately **177M in revenue** and **76M in profit**.
+- Analyzed more than **138K orders** and approximately **25K customers**.
+- Generated approximately **177M in revenue** and **76M in profit**.
 - Overall profit margin is approximately **43%**.
-- Average Order Value is approximately **1.28K**.
-- Organic Search generated the highest revenue among marketing channels.
-- Credit Card was the highest-performing payment method by revenue.
-- Repeat customers account for a major portion of the customer base.
-- The overall return rate is approximately **6.9%**.
-- The overall cancellation rate is approximately **6.1%**.
-- The dashboard enables interactive analysis across customer segments, products, regions, marketing channels, payments, delivery performance, and returns.
+- Organic Search generated the highest marketing-channel revenue.
+- Credit Card generated the highest revenue among payment methods.
+- Repeat customers represent a major share of the customer base.
+- Return rate is approximately **6.9%**.
+- Cancellation rate is approximately **6.1%**.
+- The dashboard covers business performance from **2021 to 2025**.
 
 ---
 
-# 📁 Repository Contents
+## 📁 Repository Contents
 
-| File | Description |
-|---|---|
-| `E-Commerce-Sales-Dashboard.pbix` | Complete Power BI dashboard file |
-| `01-executive-overview.png` | Executive Overview dashboard |
-| `02-product-analysis.png` | Product Analysis dashboard |
-| `03-customer-analysis.png` | Customer Analysis dashboard |
-| `04-sales-profit-analysis.png` | Sales & Profit Analysis dashboard |
-| `05-delivery-returns-analysis.png` | Delivery & Returns dashboard |
-| `06-marketing-payment-analysis.png` | Marketing & Payment dashboard |
-| `data-model.png` | Power BI data model |
-| `README.md` | Project documentation |
+- `E-Commerce-Sales-Dashboard.pbix`
+- `01-executive-overview.png`
+- `02-product-analysis.png`
+- `03-customer-analysis.png`
+- `04-sales-profit-analysis.png`
+- `05-delivery-returns-analysis.png`
+- `06-marketing-payment-analysis.png`
+- `data-model.png`
+- `README.md`
 
 ---
 
-# 🎯 Project Objective
+## 🎯 Project Objective
 
-The objective of this project is to demonstrate practical Data Analyst skills in:
+This project demonstrates practical skills in:
 
-- Data Cleaning & Transformation
+- Power BI
 - Power Query
-- Data Modeling
 - DAX
-- KPI Development
+- Data Modeling
 - Data Visualization
+- KPI Reporting
 - Sales Analysis
-- Profitability Analysis
 - Customer Analysis
 - Product Analysis
 - Marketing Analysis
-- Operational Analysis
-- Business Intelligence Reporting
+- Business Intelligence
 
 ---
 
-# 🚀 How to View the Project
-
-1. Download `E-Commerce-Sales-Dashboard.pbix`.
-2. Open the file using **Microsoft Power BI Desktop**.
-3. Navigate through the six dashboard pages.
-4. Use the interactive slicers and filters to explore the data.
-
----
-
-# 👤 Author
+## 👤 Author
 
 **Chandan Prasad**
 
 Aspiring Data Analyst | Power BI | Excel | SQL | Data Analytics
 
-GitHub: [Chandanprasad7](https://github.com/Chandanprasad7)
-
 ---
 
-⭐ If you found this project useful, feel free to star the repository.
